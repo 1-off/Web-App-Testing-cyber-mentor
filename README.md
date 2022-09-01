@@ -26,20 +26,21 @@ curl -s https://crt.sh/?q=%.$1 | sed 's/<\/\?[^>]+>//g' | grep $1
   ```bash
   sublist3r -d 'irobot.com'
   ```
-
-## technology etc. 
-- https://builtwith.com/irobot.com
-- securityheaders.com
-- nikto
-  ```bash
-  nikto -h https://irobot.com
-  ```
 - httprobe
   - https://github.com/tomnomnom/httprobe
 ```bash
 cat recon/example/domains.txt | httprobe --prefer-https
 certspotter $TARGET | httprobe --prefer-https
 ```
+
+## technology etc. 
+- https://builtwith.com/irobot.com
+- securityheaders.com
+- nikto (warning don't use it if you need to be stealth)
+  ```bash
+  nikto -h https://irobot.com
+  ```
+
 
 ## Other
 - https://vulners.com

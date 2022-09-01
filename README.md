@@ -8,11 +8,19 @@
 ## emails
 - https://hunter.io/
 ## subdomains
+- https://search.censys.io/
+- https://sslmate.com/help/reference/ct_search_api_v1
+ ```
+ GET https://api.certspotter.com/v1/issuances?domain=DOMAIN
+ ```
 - crt.sh
 ```
 crt.sh/?q=.%25<what are you looking for as subdomain>.%25.<domain>.<top level domain>
 crt.sh/?q=.%25api.%25.yahoo.com
-
+crt.sh/?q=.%25.%25.%25.%25.yahoo.com
+```
+```bash
+curl -s https://crt.sh/?q=%.$1 | sed 's/<\/\?[^>]+>//g' | grep $1
 ```
 - sublist3r
   ```bash

@@ -1,8 +1,3 @@
-## Video:
-  - https://www.youtube.com/watch?v=ZBi8Qa9m5c0&t=5566s
-  
-## Bugbounty:
-- 'https://bugcrowd.com/irobot'
 
 # Enumeration 
 ## emails
@@ -63,6 +58,14 @@ certspotter $TARGET | httprobe --prefer-https
   nikto -h https://irobot.com
   ```
 
-
 ## Other
 - https://vulners.com
+
+## Videos:
+Sorted By importance
+  - [Web App Testing: Episode 1 - Enumeration](https://www.youtube.com/watch?v=ZBi8Qa9m5c0&t=5566s)
+    - very important video about scoping 
+  - [The Bug Hunter's Methodology v4.0 - Recon Edition by @jhaddix #NahamCon2020!](https://www.youtube.com/watch?v=p4JgIu1mceI)
+    - many different tools, spiders, asn enumeration
+  - [Live Bug Bounty Recon Session on Yahoo (Part 1 - 7/14/2019)](https://www.youtube.com/watch?v=MIujSpuDtFY)
+    - a lot of bash scripting and macros

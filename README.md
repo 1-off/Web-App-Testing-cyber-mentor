@@ -9,6 +9,16 @@
 - https://hunter.io/
 ## Subdomains enumeration
 ![](/media/subdomain_enum.png)
+#### main links
+- https://search.censys.io/
+- certspotter
+- whoxy.com
+- subdomainizer(find keys)
+- subscraper
+- shodan.io
+- https://sslmate.com/help/reference/ct_search_api_v1
+- crt.sh
+
 #### asn enumeration
 - hurricane electronic internet service bgp.he.net
 - metabigor
@@ -17,16 +27,7 @@ echo 'name' | metabigor net --org -v
 ```
 ```bash
 amas intel -asn <ASN number>
-- https://search.censys.io/
-- whoxy.com
-- subdomainizer(find keys)
-- subscraper
-- shodan.io
-- https://sslmate.com/help/reference/ct_search_api_v1
- ```
- GET https://api.certspotter.com/v1/issuances?domain=DOMAIN
- ```
-- crt.sh
+```
 ```
 crt.sh/?q=.%25<what are you looking for as subdomain>.%25.<domain>.<top level domain>
 crt.sh/?q=.%25api.%25.yahoo.com
@@ -48,12 +49,13 @@ certspotter $TARGET | httprobe --prefer-https
 #### Spiders
 - hackrawler
 - gospider
-------------
+- 
 #### subdomain brutforcing
 - https://portswigger.net/burp/documentation/desktop/tutorials/enumerating-subdomains
+------------
 
 
-## technology etc. 
+## Investigate the technology etc. 
 - https://builtwith.com/irobot.com
 - securityheaders.com
 - nikto (warning don't use it if you need to be stealth)

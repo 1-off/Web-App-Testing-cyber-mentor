@@ -4,11 +4,24 @@
 ## Bugbounty:
 - 'https://bugcrowd.com/irobot'
 
-# Enumerate 
+# Enumeration 
 ## emails
 - https://hunter.io/
-## subdomains
+## Subdomains enumeration
+![](/media/subdomain_enum.png)
+#### asn enumeration
+- hurricane electronic internet service bgp.he.net
+- metabigor
+```bash
+echo 'name' | metabigor net --org -v
+```
+```bash
+amas intel -asn <ASN number>
 - https://search.censys.io/
+- whoxy.com
+- subdomainizer(find keys)
+- subscraper
+- shodan.io
 - https://sslmate.com/help/reference/ct_search_api_v1
  ```
  GET https://api.certspotter.com/v1/issuances?domain=DOMAIN
@@ -32,6 +45,13 @@ curl -s https://crt.sh/?q=%.$1 | sed 's/<\/\?[^>]+>//g' | grep $1
 cat recon/example/domains.txt | httprobe --prefer-https
 certspotter $TARGET | httprobe --prefer-https
 ```
+#### Spiders
+- hackrawler
+- gospider
+------------
+#### subdomain brutforcing
+- https://portswigger.net/burp/documentation/desktop/tutorials/enumerating-subdomains
+
 
 ## technology etc. 
 - https://builtwith.com/irobot.com

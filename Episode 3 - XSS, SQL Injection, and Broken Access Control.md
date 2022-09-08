@@ -28,6 +28,7 @@ Need to finish before sql injection:
 ```sql
 ' OR 1=1;--
 ```
+Get the admin email address and bruteforce the simple password. 
 ### after 
 - burp intruder 
 - add payload list 
